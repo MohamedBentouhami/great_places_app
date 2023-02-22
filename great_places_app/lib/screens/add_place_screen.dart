@@ -5,6 +5,7 @@ import 'package:great_places_app/providers/great_places.dart';
 import 'package:provider/provider.dart';
 
 import '../widgets/image_input.dart';
+import '../widgets/location_input.dart';
 
 class AddPlaceScreen extends StatefulWidget {
   static const routeName = '/add-place';
@@ -70,7 +71,9 @@ class _AddPlaceScreenState extends State<AddPlaceScreen> {
                   const SizedBox(
                     height: 10,
                   ),
-                  ImageInput(_selectImage)
+                  ImageInput(_selectImage),
+                  const SizedBox(height: 10),
+                  LocationInput(),
                 ],
               ),
             ),
